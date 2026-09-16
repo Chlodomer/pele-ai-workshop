@@ -230,8 +230,8 @@
 .ad-flow{display:flex;flex-direction:column;justify-content:space-around;align-self:stretch;gap:10px;padding:14px 0}
 .ad-flow.single{justify-content:center}
 .ad-arrow{position:relative;display:block;height:2px;background:var(--line);overflow:visible}
-.ad-arrow:before{content:'';position:absolute;inset-inline-end:auto;inset-inline-start:-1px;top:-4px;border:5px solid transparent;border-inline-end:7px solid var(--gold);border-inline-start:0}
-.ad-arrow:after{content:'';position:absolute;top:-3px;width:8px;height:8px;border-radius:50%;background:var(--gold);inset-inline-end:0;animation:ad-travel 1.6s linear infinite}
+.ad-arrow:before{content:'';position:absolute;inset-inline-start:auto;inset-inline-end:-1px;top:-4px;border:5px solid transparent;border-inline-start:7px solid var(--gold);border-inline-end:0}
+.ad-arrow:after{content:'';position:absolute;top:-3px;width:8px;height:8px;border-radius:50%;background:var(--gold);inset-inline-start:0;animation:ad-travel 1.6s linear infinite}
 .ad-flow .ad-arrow:nth-child(2):after{animation-delay:.4s}.ad-flow .ad-arrow:nth-child(3):after{animation-delay:.8s}.ad-flow .ad-arrow:nth-child(4):after{animation-delay:1.2s}
 .ad-agent{width:118px;height:118px;border-radius:50%;background:var(--green);color:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;box-shadow:0 0 0 6px #e1e6da;animation:ad-pulse 3.2s ease-in-out infinite;transition:transform .25s}
 .agent-diagram.focused .ad-agent{transform:scale(1.05)}
@@ -264,7 +264,7 @@
 .ad-loop.lit li{background:var(--highlight);font-weight:600}
 .ad-loop li:not(:last-child):after{content:'←';color:var(--gold)}
 @keyframes ad-rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-@keyframes ad-travel{from{inset-inline-start:calc(100% - 8px)}to{inset-inline-start:0}}
+@keyframes ad-travel{from{inset-inline-start:0}to{inset-inline-start:calc(100% - 8px)}}
 @keyframes ad-pulse{0%,100%{box-shadow:0 0 0 6px #e1e6da}50%{box-shadow:0 0 0 12px #e8ead8}}
 @keyframes ad-dash{from{background-position:0 0}to{background-position:-16px 0}}
 @media(max-width:900px){.ad-grid{grid-template-columns:1fr;gap:14px}.ad-flow{flex-direction:row;height:30px;padding:0}.ad-arrow{width:60px;transform:rotate(-90deg)}.ad-agent{margin:0 auto}.ad-part:hover,.ad-part.active{transform:none}}
