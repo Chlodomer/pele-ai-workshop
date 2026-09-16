@@ -1,0 +1,20 @@
+[
+  {
+    "id": "collection",
+    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 photograph for a qualitative research workshop website. Overhead editorial photograph of a qualitative researcher's desk, hands arranging three neat groups of interview transcript pages into plain paper folders, pencil and small audio recorder, honest everyday academic workspace. Realistic black and white documentary photography, natural window light, soft midtones, fine photographic grain, tactile paper and wood, professional restrained composition. No readable text, no typography overlay, no logos, no diagram, no collage, no futuristic AI imagery. Keep meaningful objects in central horizontal band so image can be cropped to a wide banner.",
+    "file": "public/assets/research-collection.jpg",
+    "method": "Built-in image generation"
+  },
+  {
+    "id": "evidence",
+    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 photograph for a qualitative research workshop website. Close editorial photograph of two printed interview transcripts side by side on a research desk, one human hand holding a pencil comparing underlined passages, subtle sticky page tabs and open notebook, honest qualitative analysis work. Realistic black and white documentary photography, natural window light, soft midtones, fine photographic grain, tactile paper and wood, professional restrained composition. No readable text, no typography overlay, no logos, no diagram, no collage, no futuristic AI imagery. Keep meaningful objects in central horizontal band so image can be cropped to a wide banner.",
+    "file": "public/assets/research-evidence.jpg",
+    "method": "Built-in image generation"
+  },
+  {
+    "id": "argument",
+    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 photograph for a qualitative research workshop website. Editorial photograph of three adult researchers at a table discussing printed research notes, cropped at shoulders with natural hands and gestures, one points to a page while the others consider it, thoughtful restrained academic collaboration. Realistic black and white documentary photography, natural window light, soft midtones, fine photographic grain, tactile paper and wood, professional restrained composition. No readable text, no typography overlay, no logos, no diagram, no collage, no futuristic AI imagery. Keep meaningful objects in central horizontal band so image can be cropped to a wide banner.",
+    "file": "public/assets/research-argument.jpg",
+    "method": "Built-in image generation"
+  }
+]

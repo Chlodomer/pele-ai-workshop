@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-offline/
+tmp/
+output/
+previews/
+.openai/
+.DS_Store
+*.log
