@@ -71,7 +71,8 @@ export default function AgentDiagram(){
   <div className="ad-grid" ref={grid}>
    {links&&<svg className="ad-links" width={links.w} height={links.h} viewBox={`0 0 ${links.w} ${links.h}`} aria-hidden="true">
     <defs><marker id="ad-head" markerWidth="6" markerHeight="6" refX="4.6" refY="3" orient="auto"><path d="M0,0L6,3L0,6z"/></marker></defs>
-    {[...links.inbound,links.outbound].map((d,i)=><g key={i}><path className="ad-link" d={d} markerEnd="url(#ad-head)"/><path className="ad-link-pulse" d={d} pathLength="100"/></g>)}
+    {links.inbound.map((d,i)=><g key={i} className={`ad-link-line${active?(parts[i].id===active?' lit':' dim'):''}`}><path className="ad-link" d={d} markerEnd="url(#ad-head)"/><path className="ad-link-pulse" d={d} pathLength="100"/></g>)}
+    <g className="ad-link-line"><path className="ad-link" d={links.outbound} markerEnd="url(#ad-head)"/><path className="ad-link-pulse" d={links.outbound} pathLength="100"/></g>
    </svg>}
    <ol className="ad-parts" aria-label="ארבעת חלקי ההוראה">{parts.map((p,i)=><li key={p.id} style={{'--i':i}}>
     <button type="button" className={`ad-part${active===p.id?' active':''}`} aria-pressed={pinned===p.id} onMouseEnter={()=>setHover(p.id)} onFocus={()=>setHover(p.id)} onBlur={()=>setHover(null)} onClick={()=>setPinned(pinned===p.id?null:p.id)}>

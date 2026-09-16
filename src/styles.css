@@ -231,9 +231,12 @@
 .ad-flow.single{justify-content:center}
 .ad-arrow{position:relative;display:none;height:3px;background:var(--line);overflow:visible}
 .ad-links{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
-.ad-link{fill:none;stroke:var(--gold);stroke-width:3}
+.ad-link{fill:none;stroke:var(--gold);stroke-width:3;transition:stroke-width .2s}
+.ad-link-line{transition:opacity .25s}
+.ad-link-line.dim{opacity:.22}
+.ad-link-line.lit .ad-link,.ad-link-line.lit .ad-link-pulse{stroke-width:4.5}
 .ad-links marker path{fill:var(--gold)}
-.ad-link-pulse{fill:none;stroke:var(--gold);stroke-width:3;stroke-linecap:round;stroke-dasharray:6 94;animation:ad-crawl 2.1s linear infinite}
+.ad-link-pulse{fill:none;stroke:var(--gold);stroke-width:3;transition:stroke-width .2s;stroke-linecap:round;stroke-dasharray:6 94;animation:ad-crawl 2.1s linear infinite}
 .ad-arrow:before{content:'';position:absolute;inset-inline-start:auto;inset-inline-end:-1px;top:-4px;border:5px solid transparent;border-inline-start:7px solid var(--gold);border-inline-end:0}
 .ad-arrow:after{content:'';position:absolute;top:-3px;width:8px;height:8px;border-radius:50%;background:var(--gold);inset-inline-start:0;animation:ad-travel 1.6s linear infinite}
 .ad-flow .ad-arrow:nth-child(2):after{animation-delay:.4s}.ad-flow .ad-arrow:nth-child(3):after{animation-delay:.8s}.ad-flow .ad-arrow:nth-child(4):after{animation-delay:1.2s}
